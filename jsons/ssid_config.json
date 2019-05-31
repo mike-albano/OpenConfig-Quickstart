@@ -1,0 +1,54 @@
+{
+  "hostname": "test-01.example.net",
+  "ssids": {
+    "ssid": [
+      {
+        "config": {
+          "hidden": false,
+          "operating-frequency": "openconfig-wifi-types:FREQ_5GHZ",
+          "enabled": true,
+          "name": "student1_open",
+          "opmode": "OPEN"
+        },
+        "name": "student1_open"
+      },
+      {
+        "config": {
+          "operating-frequency": "openconfig-wifi-types:FREQ_2_5_GHZ",
+          "name": "student1_psk",
+          "enabled": true,
+          "opmode": "WPA2_PERSONAL",
+          "wpa2-psk": "testing123",
+          "hidden": false
+        },
+        "name": "student1_psk"
+      }
+    ]
+  },
+  "radios": {
+    "radio": [
+      {
+        "config": {
+          "operating-frequency": "openconfig-wifi-types:FREQ_5GHZ",
+          "channel-width": 20,
+          "dca": false,
+          "transmit-power": 3,
+          "id": 0,
+          "channel": 165
+        },
+        "id": 0
+      },
+      {
+        "config": {
+          "operating-frequency": "openconfig-wifi-types:FREQ_2GHZ",
+          "channel-width": 20,
+          "dca": false,
+          "transmit-power": 3,
+          "id": 1,
+          "channel": 6
+        },
+        "id": 1
+      }
+    ]
+  }
+}

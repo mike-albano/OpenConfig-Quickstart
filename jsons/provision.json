@@ -1,0 +1,8 @@
+{
+  "openconfig-ap-manager:config": {
+    "country-code": "US",
+    "mac": "88:B1:E1:29:AE:8F",
+    "hostname": "test-01.example.net"
+  },
+  "openconfig-ap-manager:mac": "88:B1:E1:29:AE:8F"
+}
