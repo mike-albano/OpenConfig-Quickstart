@@ -6,6 +6,12 @@ broadcast and usable.
 For a much more verbose introduction to OpenConfig, including
  modeling and code snippets, refer to this [OC by Example repo](https://github.com/mike-albano/wlpc-ocapi)
 
+This is based on the following [OC Model](https://github.com/openconfig/public/tree/master/release/models/wifi) versions:
+* openconfig-ap-manager: 0.1.1
+* openconfig-access-points: 0.2.0
+* openconfig-wifi-mac: 0.3.0
+* openconfig-wifi-phy: 0.2.0
+
 # Prerequisits
 * [py_gnmicli.py](https://github.com/google/gnxi/tree/master/gnmi_cli_py)
 Note, the py_gnmicli [docker container](https://github.com/google/gnxi/tree/master/gnmi_cli_py#docker)
