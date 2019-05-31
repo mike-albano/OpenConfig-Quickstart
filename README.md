@@ -13,7 +13,8 @@ Note, the py_gnmicli [docker container](https://github.com/google/gnxi/tree/mast
 * An Access Point which supports OpenConfig (This example uses Arista)
 
 # Step 1: Provision the AP
-This uses [provision.json](./jsons/provision.json). From the [py_gnmicli repo directory](https://github.com/google/gnxi/tree/master/gnmi_cli_py) run:
+This uses [provision.json](./jsons/provision.json).
+From the [py_gnmicli repo directory](https://github.com/google/gnxi/tree/master/gnmi_cli_py) run:
 ```
 python ~/gnxi/gnmi_cli_py/py_gnmicli.py -m set-update -t 192.168.1.23 -p 8080 -g -o openconfig.mojonetworks.com -user admin -pass admin -x /provision-aps/provision-ap[mac=88:B1:E1:29:AE:8F]/ -val @provision.json
 ```
@@ -87,7 +88,8 @@ The GetResponse is below
 ```
 
 # Step 2: Configure the AP
-This uses [ssid_config.json](./jsons/ssid_config.json). From the [py_gnmicli repo directory](https://github.com/google/gnxi/tree/master/gnmi_cli_py) run:
+This uses [ssid_config.json](./jsons/ssid_config.json).
+From the [py_gnmicli repo directory](https://github.com/google/gnxi/tree/master/gnmi_cli_py) run:
 ```
 python ~/gnxi/gnmi_cli_py/py_gnmicli.py -m set-update -t 192.168.1.23 -p 8080 -g -o openconfig.mojonetworks.com -user admin -pass admin -x /access-points/access-point[hostname=test-01.example.net]/ -val @ssid_config.json
 ```
