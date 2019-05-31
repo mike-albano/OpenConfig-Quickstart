@@ -176,3 +176,8 @@ You should limit whats being returned in the GetResponse using xpaths.
 python ~/gnxi/gnmi_cli_py/py_gnmicli.py -m get -t 192.168.1.23 -p 8080 -g -o openconfig.mojonetworks.com -user admin -pass admin -x /access-points/access-point[hostname=test-01.example.net]/ssids/ssid[name=student1_open]/config/opmode
 ```
 You should now see your SSIDs, and be able to connect to them.
+
+In the "real world" you're probably not going to be using APIs by hand; rather
+ build automation tools around them. For that you should move on to
+ building language bindings using either [PyangBind](https://github.com/robshakir/pyangbind)
+ (Python) or [YGOT](https://github.com/openconfig/ygot) (Go).
